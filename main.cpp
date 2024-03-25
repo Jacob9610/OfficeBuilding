@@ -9,8 +9,8 @@ int main() {
     Employee* emp1 = new Employee("john" , 45 , dep);
 cout << emp1->getName() << endl;
 cout << emp1->getidNumber()<< endl;
-cout << emp1->getDepartment()->getName() << endl;
-
+cout << emp1->getDepartment().getDepartmentName() << endl;
+//
 delete emp1;
 delete dep;
     return 0;
