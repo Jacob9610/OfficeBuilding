@@ -5,12 +5,11 @@
 using namespace std;
 int main() {
     cout << "Hello, World!" << endl;
-
-Employee* emp1 = new Employee("john",45);
-Department* dep =  new Department("fuck this assignment");
+    Department* dep =  new Department("fuck this assignment");
+    Employee* emp1 = new Employee("john" , 45 , dep);
 cout << emp1->getName() << endl;
 cout << emp1->getidNumber()<< endl;
-cout << dep->getDepartmentName() << endl;
+cout << emp1->getDepartment()->getName() << endl;
 
 delete emp1;
 delete dep;
