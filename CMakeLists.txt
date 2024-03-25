@@ -8,4 +8,6 @@ add_executable(OfficeBuilding main.cpp
         Employee.cpp
         Department.h
         Department.cpp
+        Office.h
+        Office.cpp
         )

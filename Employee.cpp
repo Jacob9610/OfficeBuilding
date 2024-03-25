@@ -3,14 +3,16 @@
 //
 #include "Employee.h"
 #include "Department.h"
+#include "Office.h"
 #include <string>
 
 Employee::Employee(){
 }
-Employee::Employee(string name, int idNumber, Department* department){
+Employee::Employee(string name, int idNumber, Department* department,Office* office){
     this -> name = name;
     this -> idNumber = idNumber;
     this -> department = *department;
+    this-> office = *office;
 }
 Employee::~Employee(){
     cout<< "destroying Employee" << endl;
@@ -34,3 +36,11 @@ Department Employee::getDepartment(){
 void  Employee::setDepartment(Department department){
     this -> department = department;
 }
+
+Office Employee::getOffice(){
+        return this->office;
+}
+ 
+   void Employee::setOffice(Office office){
+    this->office = office;
+   }

@@ -1,20 +1,9 @@
 # ninja log v5
-7	2038	1711305348506448778	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
-2068	2319	1711305348801754568	OfficeBuilding	ae4b7df30328e03d
-4	2067	1711305348526638575	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
-7	2513	1711386547647208924	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
-6	2514	1711386547646578732	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
-4	1639	1711386821429624310	CMakeFiles/OfficeBuilding.dir/Department.cpp.o	34a281280faa4756
-1640	1763	1711386821562358265	OfficeBuilding	c4dcb26c9d25cf1
-12	1608	1711386832988202045	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
-1609	1725	1711386833106166641	OfficeBuilding	c4dcb26c9d25cf1
-10	2139	1711390448887101052	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
-8	1468	1711390704120191590	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
-9	1540	1711390755290286556	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
 15	1567	1711390921508119108	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
-33	2863	1711393611965242057	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
-2864	3061	1711393612173705616	OfficeBuilding	c4dcb26c9d25cf1
-10	3085	1711401878430052077	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
-3085	3272	1711401878627248939	OfficeBuilding	c4dcb26c9d25cf1
-16	3523	1711401916356579835	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
 3524	3757	1711401916606919204	OfficeBuilding	c4dcb26c9d25cf1
+16	3523	1711401916356579835	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
+4	1639	1711386821429624310	CMakeFiles/OfficeBuilding.dir/Department.cpp.o	34a281280faa4756
+20	8215	1711409258223985250	CMakeFiles/OfficeBuilding.dir/Office.cpp.o	ea97dc06b281e732
+15	8217	1711409258266114578	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
+17	8217	1711409258260365441	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
+8218	9162	1711409259229473260	OfficeBuilding	ce050c774a7bc3e9

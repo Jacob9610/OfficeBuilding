@@ -67,6 +67,12 @@ build CMakeFiles/OfficeBuilding.dir/Department.cpp.o: CXX_COMPILER__OfficeBuildi
   OBJECT_DIR = CMakeFiles/OfficeBuilding.dir
   OBJECT_FILE_DIR = CMakeFiles/OfficeBuilding.dir
 
+build CMakeFiles/OfficeBuilding.dir/Office.cpp.o: CXX_COMPILER__OfficeBuilding_unscanned_Debug /Users/JacobVazquez/CLionProjects/OfficeBuilding/Office.cpp || cmake_object_order_depends_target_OfficeBuilding
+  DEP_FILE = CMakeFiles/OfficeBuilding.dir/Office.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -mmacosx-version-min=11.7 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/OfficeBuilding.dir
+  OBJECT_FILE_DIR = CMakeFiles/OfficeBuilding.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OfficeBuilding
@@ -75,7 +81,7 @@ build CMakeFiles/OfficeBuilding.dir/Department.cpp.o: CXX_COMPILER__OfficeBuildi
 #############################################
 # Link the executable OfficeBuilding
 
-build OfficeBuilding: CXX_EXECUTABLE_LINKER__OfficeBuilding_Debug CMakeFiles/OfficeBuilding.dir/main.cpp.o CMakeFiles/OfficeBuilding.dir/Employee.cpp.o CMakeFiles/OfficeBuilding.dir/Department.cpp.o
+build OfficeBuilding: CXX_EXECUTABLE_LINKER__OfficeBuilding_Debug CMakeFiles/OfficeBuilding.dir/main.cpp.o CMakeFiles/OfficeBuilding.dir/Employee.cpp.o CMakeFiles/OfficeBuilding.dir/Department.cpp.o CMakeFiles/OfficeBuilding.dir/Office.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -mmacosx-version-min=11.7
   OBJECT_DIR = CMakeFiles/OfficeBuilding.dir
   POST_BUILD = :
