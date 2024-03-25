@@ -1,0 +1,10 @@
+# ninja log v5
+7	2038	1711305348506448778	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
+2068	2319	1711305348801754568	OfficeBuilding	ae4b7df30328e03d
+4	2067	1711305348526638575	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
+7	2513	1711386547647208924	CMakeFiles/OfficeBuilding.dir/Employee.cpp.o	dc1e7e4e8ec190ab
+6	2514	1711386547646578732	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
+4	1639	1711386821429624310	CMakeFiles/OfficeBuilding.dir/Department.cpp.o	34a281280faa4756
+1640	1763	1711386821562358265	OfficeBuilding	c4dcb26c9d25cf1
+12	1608	1711386832988202045	CMakeFiles/OfficeBuilding.dir/main.cpp.o	d6d02bc0fad6c1af
+1609	1725	1711386833106166641	OfficeBuilding	c4dcb26c9d25cf1

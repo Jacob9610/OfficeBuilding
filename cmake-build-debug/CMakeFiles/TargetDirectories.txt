@@ -1,0 +1,3 @@
+/Users/JacobVazquez/CLionProjects/OfficeBuilding/cmake-build-debug/CMakeFiles/OfficeBuilding.dir
+/Users/JacobVazquez/CLionProjects/OfficeBuilding/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/JacobVazquez/CLionProjects/OfficeBuilding/cmake-build-debug/CMakeFiles/rebuild_cache.dir
