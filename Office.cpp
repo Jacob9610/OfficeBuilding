@@ -16,7 +16,7 @@ this->employee = employee;
 }
 Office::~Office()
 {
-    cout<<"Office destructor called";
+    cout<<"Office Destructor" <<endl;
 }
 
 

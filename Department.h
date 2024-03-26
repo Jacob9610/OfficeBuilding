@@ -5,15 +5,17 @@
 using namespace std;
 #ifndef OFFICEBUILDING_DEPARTMENT_H
 #define OFFICEBUILDING_DEPARTMENT_H
+class Employee;
 class Department{
 private:
-//Employee employee;
+Employee* employees[30];
 string departmentName;
 public: 
 Department();
-//Department(string departmentName, vector employees);
+Department(string departmentName, Employee*);
 ~Department();
-Department(string departmentName);
+
+
 string getDepartmentName();
 void setDepartmentName(string departmentName);
 

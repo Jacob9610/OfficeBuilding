@@ -4,11 +4,12 @@ using namespace std;
 Department::Department(){
     
 }
-Department::Department(string departmentName){
+Department::Department(string departmentName,Employee *employees ){
 this -> departmentName = departmentName;
+*this ->employees = employees;
 }
 Department::~Department(){
-    cout << "Department Destructor called";
+    cout << "Department Destructor" << endl;
 
 }
 string Department:: getDepartmentName(){

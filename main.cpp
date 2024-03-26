@@ -6,7 +6,7 @@
 using namespace std;
 int main() {
     cout << "Hello, World!" << endl;
-    Department* dep =  new Department("fuck this assignment");
+    Department* dep =  new Department();/////////////////
     Office* office =  new Office();
     Employee* emp1 = new Employee("john" , 45 , dep, office);
     office->setEmployee(emp1);
