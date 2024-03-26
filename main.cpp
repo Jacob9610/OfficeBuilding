@@ -5,6 +5,8 @@
 #include "Office.h"
 using namespace std;
 int main() {
+
+    
     cout << "Hello, World!" << endl;
     Department* dep =  new Department();/////////////////
     Office* office =  new Office();

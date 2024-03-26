@@ -9,6 +9,9 @@
 using namespace std;
 class Employee;
 class Office {
+    private:
+int officeNumber;
+Employee* employee;
 public:
     Office();
     Office(int, Employee*);
@@ -18,9 +21,7 @@ public:
     void setEmployee(Employee*);
     int getOfficeNumber();
     Employee* getEmployee();
-    private:
-int officeNumber;
-Employee* employee;
+    
 
 
 };
