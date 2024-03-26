@@ -9,12 +9,13 @@ int main() {
     Department* dep =  new Department("fuck this assignment");
     Office* office =  new Office();
     Employee* emp1 = new Employee("john" , 45 , dep, office);
-
+    office->setEmployee(emp1);
 
 cout << emp1->getName() << endl;
 cout << emp1->getidNumber()<< endl;
 cout << emp1->getDepartment().getDepartmentName() << endl;
-//
+cout << office->getEmployee()->getName();
+
 delete emp1;
 delete dep;
 delete office;

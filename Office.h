@@ -4,16 +4,23 @@
 
 #ifndef OFFICEBUILDING_OFFICE_H
 #define OFFICEBUILDING_OFFICE_H
-#include "Employee.h"
+//#include "Employee.h"   /// you cant #include "Employee" here and #include "Office" in Employee.h
 #include <iostream>
 using namespace std;
+class Employee;
 class Office {
 public:
     Office();
-    Office(int);
+    Office(int, Employee*);
     ~Office();
+
+    void setOfficeNumber(int);
+    void setEmployee(Employee*);
+    int getOfficeNumber();
+    Employee* getEmployee();
     private:
 int officeNumber;
+Employee* employee;
 
 
 };
