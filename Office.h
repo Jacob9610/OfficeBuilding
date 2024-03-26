@@ -14,7 +14,8 @@ public:
     ~Office();
     private:
 int officeNumber;
-Employee employee; 
+
+
 };
 
 
