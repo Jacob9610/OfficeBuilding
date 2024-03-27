@@ -10,4 +10,6 @@ add_executable(OfficeBuilding main.cpp
         Department.cpp
         Office.h
         Office.cpp
+        Floor.h
+        Floor.cpp
         )

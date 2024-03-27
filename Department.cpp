@@ -8,6 +8,10 @@ Department::Department(string departmentName,Employee *employees ){
 this -> departmentName = departmentName;
 *this ->employees = employees;
 }
+Department::Department(string departmentName){
+this -> departmentName = departmentName;
+}
+
 Department::~Department(){
     cout << "Department Destructor" << endl;
 
@@ -17,4 +21,10 @@ string Department:: getDepartmentName(){
 }
 void Department::setDepartmentName(string departmentName){
     this->departmentName = departmentName;
+}
+void Department::setEmployees(Employee *employee){
+
+//here i want to add the employee to the array of  
+
+
 }

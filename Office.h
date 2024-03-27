@@ -8,13 +8,16 @@
 #include <iostream>
 using namespace std;
 class Employee;
+class Floor;
 class Office {
     private:
 int officeNumber;
+Floor* floor;
 Employee* employee;
+
 public:
     Office();
-    Office(int, Employee*);
+    Office(int, Employee* , Floor*);
     ~Office();
 
     void setOfficeNumber(int);

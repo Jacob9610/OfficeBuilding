@@ -8,6 +8,10 @@
 
 Employee::Employee(){
 }
+Employee::Employee(string name, int idNumber){
+    this -> name = name;
+    this -> idNumber = idNumber;
+}
 Employee::Employee(string name, int idNumber, Department* department,Office* office){
     this -> name = name;
     this -> idNumber = idNumber;

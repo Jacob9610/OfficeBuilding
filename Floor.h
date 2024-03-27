@@ -9,10 +9,13 @@ class Floor
 {
 private:
     int floorNum;
+    int officenum;
     Office* office[99];
 
 public:
     Floor(int,Office*);
+    Floor(int, int);
+    Floor();
     ~Floor();
 };
 

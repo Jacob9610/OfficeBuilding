@@ -13,6 +13,7 @@ class Employee{
    
     Employee getEmployee();
     Employee();
+     Employee(string, int);
     ~Employee();
     Employee(string, int, Department *,Office *);
      string getName();

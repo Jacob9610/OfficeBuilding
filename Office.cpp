@@ -9,10 +9,11 @@ using namespace std;
 Office::Office(){
 
 }
-Office::Office(int officeNumber, Employee *employee)
+Office::Office(int officeNumber, Employee *employee, Floor *floor)
 {
 this->officeNumber = officeNumber;
 this->employee = employee;
+this->floor = floor;
 }
 Office::~Office()
 {
@@ -31,8 +32,7 @@ Office::~Office()
 
 
     int Office::getOfficeNumber(){
-
-
+        return this->officeNumber;
     }
     Employee* Office::getEmployee(){
             return this-> employee;
