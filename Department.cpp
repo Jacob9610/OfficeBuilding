@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Department.h"
 using namespace std;
+
 Department::Department(){
     
 }
@@ -24,7 +25,18 @@ void Department::setDepartmentName(string departmentName){
 }
 void Department::setEmployees(Employee *employee){
 
-//here i want to add the employee to the array of  
+    this ->employees[this->numEmployees] = employee;
 
 
+}
+void Department::incrementEmployees(){
+this->numEmployees++;
+
+}
+
+Employee* Department::displayEmployees(){
+    
+         return this->employees;
+    
+    
 }

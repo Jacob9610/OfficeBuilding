@@ -10,6 +10,7 @@ class Department{
 private:
 Employee* employees[30];
 string departmentName;
+int numEmployees;
 public: 
 Department();
 Department(string departmentName);
@@ -20,6 +21,10 @@ Department(string departmentName, Employee*);
 string getDepartmentName();
 void setDepartmentName(string departmentName);
 void setEmployees(Employee*);
+void incrementEmployees();
+int numOfEmployees();
+Employee displayEmployees();
+
 
 };
 #endif //OFFICEBUILDING_DEPARTMENT_H
