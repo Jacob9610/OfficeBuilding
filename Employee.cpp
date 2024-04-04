@@ -19,7 +19,7 @@ Employee::Employee(string name, int idNumber, Department* department,Office* off
     this-> office = *office;
 }
 Employee::~Employee(){
-    cout<< "destroying Employee" << endl;
+   
 }
 string Employee::getName() {
     return this -> name;

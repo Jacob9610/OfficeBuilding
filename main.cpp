@@ -30,14 +30,14 @@ void addEmployee(vector<Employee>* employees, vector<Department>* departments){
 
         
         Department tmpdep = Department(depName);
-        Office tmpoffice= Office();
+        Office tmpoffice= Office( office,floor);
         Employee tmpemp = Employee(empName,id);//need dep and office
         tmpemp.setOffice(tmpoffice);//need dep
         tmpemp.setDepartment(tmpdep);//full employee
         employees->push_back(tmpemp);//new emplyee added to vector.
 
 
-       cout << employees->at(0).getName();/// wooo hooo
+       
 
 
         //departments->push_back(tmpdep);
@@ -45,9 +45,9 @@ void addEmployee(vector<Employee>* employees, vector<Department>* departments){
          //    tmpdep.setEmployees(tmpemp);//add employee to a departments array of employees.
 
 
-
+        
         //adding department
-        for (int i = 0; i < departments->size(); i++ ) {
+       /* for (int i = 0; i < departments->size(); i++ ) {
 
             if (tmpdep.getDepartmentName() == departments->at(i).getDepartmentName()    )//checking names against each other
            {
@@ -58,13 +58,14 @@ void addEmployee(vector<Employee>* employees, vector<Department>* departments){
 
            }
            else{
+            tmpdep.incrementEmployees();
             tmpdep.setEmployees(&tmpemp);
+            
             departments->push_back(tmpdep);
+            
 
            }
-         }
-
-
+         }*/
        //Floor floor =  Floor(floor,office);
 
         
@@ -80,28 +81,39 @@ void addEmployee(vector<Employee>* employees, vector<Department>* departments){
             cout<<  employees->at(i).getName() << ", #"<< employees->at(i).getidNumber() << ", works in the "<< employees->at(i).getDepartment().getDepartmentName() << " department in office" << endl;
         }
     }
-void  listADepartment(vector<Department>*departments){
-    for (int i = 0; i < departments->size(); i++ ) {
-        string tmpdep;
+void  listADepartment(vector<Department>*departments, vector<Employee>* employees){
+    string tmpdep;
 
-            if (tmpdep == departments->at(i).getDepartmentName()    )//checking names against each other
-           {
-                for (size_t j = 0; j < departments->at(i).numOfEmployees() ; j++)
-                {
-                    cout << departments->at(i).displayEmployees()->getName();
-                }
-                
-           }
-           else{
-            cout << "department does not exist" << endl;
+        cout << "what department would you like to display?";
+        cin >> tmpdep;
+        cout << "The employees who work in the department are :" << endl;
+        
+for (int i = 0; i < employees->size(); i++)
+{
 
-           }
-         }
+   if (tmpdep == employees->at(i).getDepartment().getDepartmentName() ){
+       cout <<  employees->at(i).getName() << ",#" << employees->at(i).getidNumber() << endl;
+   }
+}
 
 
 
-    }
 
+}
+   void listFloorEmployees(vector<Employee>* employees){
+    cout << "What floor would you like to display?\n";
+    int floorNum;
+    cin >> floorNum;
+    for (int i = 0; i < employees->size(); i++)
+{
+
+   if (floorNum == employees->at(i).getOffice().getfloor() ){
+       cout <<  employees->at(i).getName() << ",#" << employees->at(i).getidNumber() << endl;
+   }
+}
+
+
+   }
 
 
 int main() {
@@ -128,11 +140,11 @@ do{
 
     }
     else if(menuSelection == 3){
-        listADepartment(&departments);
+        listADepartment(&departments ,&employees);
 
     }
     else if(menuSelection == 4) {
-
+        listFloorEmployees(&employees);
 
     }
     }while(menuSelection != 5);

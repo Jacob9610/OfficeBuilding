@@ -23,7 +23,7 @@ void setDepartmentName(string departmentName);
 void setEmployees(Employee*);
 void incrementEmployees();
 int numOfEmployees();
-Employee displayEmployees();
+void displayEmployees();
 
 
 };

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Department.h"
+#include "Employee.h"
 using namespace std;
 
 Department::Department(){
@@ -14,7 +15,7 @@ this -> departmentName = departmentName;
 }
 
 Department::~Department(){
-    cout << "Department Destructor" << endl;
+   ;
 
 }
 string Department:: getDepartmentName(){
@@ -26,6 +27,7 @@ void Department::setDepartmentName(string departmentName){
 void Department::setEmployees(Employee *employee){
 
     this ->employees[this->numEmployees] = employee;
+    
 
 
 }
@@ -34,9 +36,14 @@ this->numEmployees++;
 
 }
 
-Employee* Department::displayEmployees(){
+void Department::displayEmployees(){
     
-         return this->employees;
+         //here i will loop through the employeees
+         for (int  i = 0; i < 29; i++)
+         { cout << "fuck";
+            cout << this->employees[i]->getName();
+         }
+         
     
     
 }

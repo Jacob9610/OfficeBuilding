@@ -9,15 +9,15 @@ using namespace std;
 Office::Office(){
 
 }
-Office::Office(int officeNumber, Employee *employee, Floor *floor)
+Office::Office(int officeNumber, int floor)
 {
-this->officeNumber = officeNumber;
-this->employee = employee;
-this->floor = floor;
+    this->officeNumber = officeNumber;
+    this->floor = floor;
+
 }
 Office::~Office()
 {
-    cout<<"Office Destructor" <<endl;
+
 }
 
 
@@ -25,16 +25,12 @@ Office::~Office()
         this-> officeNumber = officeNumber;
 
  }
-    void Office::setEmployee(Employee *employee){
-            this->employee = employee;
-
-    }
+    
 
 
     int Office::getOfficeNumber(){
         return this->officeNumber;
     }
-    Employee* Office::getEmployee(){
-            return this-> employee;
-
+    int Office::getfloor(){
+        return this->floor;
     }

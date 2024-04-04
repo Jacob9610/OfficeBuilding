@@ -12,18 +12,18 @@ class Floor;
 class Office {
     private:
 int officeNumber;
-Floor* floor;
-Employee* employee;
+int floor;
 
 public:
     Office();
-    Office(int, Employee* , Floor*);
+    
+    Office(int, int);
     ~Office();
 
     void setOfficeNumber(int);
-    void setEmployee(Employee*);
+    int getfloor();
     int getOfficeNumber();
-    Employee* getEmployee();
+    
     
 
 
